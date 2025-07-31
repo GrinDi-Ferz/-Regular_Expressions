@@ -18,7 +18,7 @@ def directory():
   for i in contacts_list:
     result_name = ' '.join(i[:3]).split(' ')
     if result_name[2] == '':
-      del result_name[2]   #result_name[:] = [item for item in result_name if item]
+      del result_name[2]   
       print(result_name)
       result_contact = [result_name[0], result_name[1], result_name[2], i[3], i[4], re.sub(pattern, replace, i[5]), i[6]]
       new_list.append(result_contact)
